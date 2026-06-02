@@ -1,0 +1,35 @@
+[versions]
+kotlin = "2.2.10"
+ksp = "2.2.10-2.0.2"
+gson = "2.11.0"
+kotlinpoet = "2.2.0"
+objectbox = "5.4.1"
+coroutines = "1.10.2"
+# AGP for compileOnly in gradle plugin (low for compatibility)
+agp-compat = "7.4.2"
+# AGP for sample-app build
+agp = "8.7.3"
+
+[libraries]
+ksp-api = { group = "com.google.devtools.ksp", name = "symbol-processing-api", version.ref = "ksp" }
+ksp-gradle = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+kotlinpoet-ksp = { group = "com.squareup", name = "kotlinpoet-ksp", version.ref = "kotlinpoet" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+agp-api = { group = "com.android.tools.build", name = "gradle-api", version.ref = "agp-compat" }
+objectbox-java = { group = "io.objectbox", name = "objectbox-java", version.ref = "objectbox" }
+objectbox-processor = { group = "io.objectbox", name = "objectbox-processor", version.ref = "objectbox" }
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+androidx-core-ktx = "androidx.core:core-ktx:1.16.0"
+androidx-appcompat = "androidx.appcompat:appcompat:1.7.1"
+androidx-activity-ktx = "androidx.activity:activity-ktx:1.10.1"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+objectbox = { id = "io.objectbox", version.ref = "objectbox" }

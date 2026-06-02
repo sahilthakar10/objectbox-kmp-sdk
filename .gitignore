@@ -1,0 +1,51 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin
+.kotlin/
+*.kotlin_module
+
+# Android
+local.properties
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS / Xcode
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and diagnostics
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# Generated local artifacts
+android-sample-ui.png
+
+# Local assistant / Codex instructions must not be committed
+AGENTS.md
+**/AGENTS.md
+*codex*.md
+*Codex*.md
+**/*codex*.md
+**/*Codex*.md

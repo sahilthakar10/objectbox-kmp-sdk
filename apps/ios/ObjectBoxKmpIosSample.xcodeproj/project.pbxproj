@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0000010000000000000001 /* ObjectBoxKmpIosSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000011 /* ObjectBoxKmpIosSampleApp.swift */; };
+		0A0000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000010000000000000012 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0000010000000000000010 /* ObjectBoxKmpIosSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectBoxKmpIosSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0000010000000000000011 /* ObjectBoxKmpIosSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBoxKmpIosSampleApp.swift; sourceTree = "<group>"; };
+		0A0000010000000000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0000010000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0000010000000000000030 = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000031 /* ObjectBoxKmpIosSample */,
+				0A0000010000000000000032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000031 /* ObjectBoxKmpIosSample */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000011 /* ObjectBoxKmpIosSampleApp.swift */,
+				0A0000010000000000000012 /* ContentView.swift */,
+			);
+			path = ObjectBoxKmpIosSample;
+			sourceTree = "<group>";
+		};
+		0A0000010000000000000032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000010000000000000010 /* ObjectBoxKmpIosSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0000010000000000000040 /* ObjectBoxKmpIosSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000010000000000000080 /* Build configuration list for PBXNativeTarget "ObjectBoxKmpIosSample" */;
+			buildPhases = (
+				0A0000010000000000000050 /* Build Shared KMP Framework */,
+				0A0000010000000000000060 /* Sources */,
+				0A0000010000000000000020 /* Frameworks */,
+				0A0000010000000000000070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectBoxKmpIosSample;
+			productName = ObjectBoxKmpIosSample;
+			productReference = 0A0000010000000000000010 /* ObjectBoxKmpIosSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0000010000000000000090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					0A0000010000000000000040 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 0A0000010000000000000091 /* Build configuration list for PBXProject "ObjectBoxKmpIosSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A0000010000000000000030;
+			productRefGroup = 0A0000010000000000000032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0000010000000000000040 /* ObjectBoxKmpIosSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0000010000000000000070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A0000010000000000000050 /* Build Shared KMP Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Shared KMP Framework";
+			outputPaths = (
+				"$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework/ObjectBoxKmpSampleShared.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/../..\"\n./gradlew :apps:shared:linkDebugFrameworkIosSimulatorArm64\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0000010000000000000060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0000010000000000000001 /* ObjectBoxKmpIosSampleApp.swift in Sources */,
+				0A0000010000000000000002 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A00000100000000000000A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					ObjectBoxKmpSampleShared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeint.objectboxkmp.iossample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A00000100000000000000A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					ObjectBoxKmpSampleShared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeint.objectboxkmp.iossample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0A00000100000000000000B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A00000100000000000000B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0000010000000000000080 /* Build configuration list for PBXNativeTarget "ObjectBoxKmpIosSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A00000100000000000000A0 /* Debug */,
+				0A00000100000000000000A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0A0000010000000000000091 /* Build configuration list for PBXProject "ObjectBoxKmpIosSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A00000100000000000000B0 /* Debug */,
+				0A00000100000000000000B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A0000010000000000000090 /* Project object */;
+}
